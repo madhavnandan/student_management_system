@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Father Name Name</th>
+                <th>Mother Name</th>
+                <th>Class</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {{#each data}}
+            <tr>
+                <th scope="row">{{this.sname}}</th>
+                <td>{{this.fname}}</td>
+                <td>{{this.mname}}</td>
+                <td>{{this.cname}}</td>
+                <td>{{this.mobile}}</td>
+            </tr>
+            {{/each}}
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
